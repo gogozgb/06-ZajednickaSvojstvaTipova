@@ -15,23 +15,29 @@ namespace Vsite.CSharp
             MojaKlasa mk3 = new MojaKlasa();
 
             // metoda ToString
-            // TODO: za svaki objekt pozvati njegovu metodu ToString i ispisati na konzolu ono što ona vraća
+            Console.WriteLine(mk1.ToString());
+            Console.WriteLine(mk2.ToString());
+            Console.WriteLine(mk3.ToString());
 
 
             // metoda GetType
-            // TODO: za svaki objekt pozvati njegovu metodu GetType i ispisati na konzolu ono što ona vraća
-
+            Console.WriteLine(mk1.GetType());
+            Console.WriteLine(mk2.GetType());
+            Console.WriteLine(mk2.GetType());
+            var t = mk1.GetType();
 
             // metoda GetHashCode
-            // TODO: za svaki objekt pozvati njegovu metodu GetHashCode i ispisati na konzolu ono što ona vraća
-
+            Console.WriteLine(mk1.GetHashCode());
+            Console.WriteLine(mk2.GetHashCode());
+            Console.WriteLine(mk2.GetHashCode());
 
             // metoda Equals
-            // TODO: za svaki objekt pozvati njegovu metodu Equals i usporedbu napraviti sa svim ostalim objektima te ispisati na konzolu ono što ona vraća
-
+            Console.WriteLine(mk1.Equals(mk1));
+            Console.WriteLine(mk1.Equals(mk2));
+            Console.WriteLine(mk1.Equals(mk3));
 
             // TODO: ispise pohraniti u datoteku SystemObjects.txt priloženu projektu te u njoj obrazložiti rezultate za svaku metodu!
-
+   
 
             Console.ReadKey();
         }
